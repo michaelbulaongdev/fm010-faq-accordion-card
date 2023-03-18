@@ -1,12 +1,7 @@
 import './App.css';
 import {list} from './components/list';
-import {ReactComponent as ArrowSVG} from './images/icon-arrow-down.svg';
-import {
-	Accordion,
-	AccordionSummary,
-	AccordionDetails,
-	Typography,
-} from '@mui/material';
+import {ReactComponent as ArrowIcon} from './images/icon-arrow-down.svg';
+import {Accordion, AccordionSummary, AccordionDetails} from '@mui/material';
 
 function App() {
 	return (
@@ -15,13 +10,15 @@ function App() {
 				<h1>FAQ</h1>
 				{list.map((item) => {
 					return (
-						<Accordion>
+						<Accordion disableGutters='true'>
 							<AccordionSummary>
-								<Typography>{item.question}</Typography>
-								<ArrowSVG />
+								<p className='question'>{item.question}</p>
+								<div className='arrow'>
+									<ArrowIcon />
+								</div>
 							</AccordionSummary>
 							<AccordionDetails>
-								<Typography>{item.answer}</Typography>
+								<p className='answer'>{item.answer}</p>
 							</AccordionDetails>
 						</Accordion>
 					);
