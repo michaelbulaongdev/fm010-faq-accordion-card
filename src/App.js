@@ -6,16 +6,18 @@ function App() {
 	return (
 		<div className='App'>
 			<div>
-				<h1>FAQ</h1>
-				{list.map((item, index) => {
-					return (
-						<AccordionItem
-							key={index}
-							question={item.question}
-							answer={item.answer}
-						/>
-					);
-				})}
+				<div className='faq-container'>
+					<h1 className='faq-title'>FAQ</h1>
+					{list.map((item, index) => {
+						return (
+							<AccordionItem
+								key={index}
+								question={item.question}
+								answer={item.answer}
+							/>
+						);
+					})}
+				</div>
 			</div>
 		</div>
 	);

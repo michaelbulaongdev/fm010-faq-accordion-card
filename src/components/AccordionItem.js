@@ -12,11 +12,19 @@ function AccordionItem(props) {
 
 	return (
 		<div className='accordion-item'>
-			<div className='accordion-header' onClick={handleClick}>
+			<div
+				className={
+					isExpanded ? 'accordion-header expanded' : 'accordion-header'
+				}
+				onClick={handleClick}>
 				<p>{props.question}</p>
-				<ArrowIcon className={isFlipped ? 'flipped' : ''} />
+				<div className='arrow'>
+					<ArrowIcon className={isFlipped ? 'flipped' : ''} />
+				</div>
 			</div>
-			{isExpanded && <p className='accordion-content'>{props.answer}</p>}
+			<div>
+				{isExpanded && <p className='accordion-content'>{props.answer}</p>}
+			</div>
 		</div>
 	);
 }

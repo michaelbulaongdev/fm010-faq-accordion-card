@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-.App {
-	font-family: 'Kumbh Sans', sans-serif;
-	text-align: center;
-}
-
 :root {
 	--veryDarkBlue: hsl(238, 29%, 16%);
 	--softRed: hsl(14, 88%, 65%);
@@ -13,6 +8,54 @@
 	--darkGray: hsl(237, 12%, 33%);
 	--normGray: hsl(240, 6%, 50%);
 	--lightGray: hsl(240, 5%, 91%);
+}
+
+h1 {
+	font-weight: 700;
+}
+
+.App {
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+.faq-container {
+	min-width: 200px;
+	background-color: white;
+	margin: 15vh auto;
+	padding: 15vh 5vh 10vh;
+}
+
+.accordion-item {
+	border-bottom: 1px solid var(--lightGray);
+}
+
+.accordion-header {
+	color: var(--veryDarkBlue);
+	font-size: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.accordion-header:hover {
+	color: var(--softRed);
+	cursor: pointer;
+}
+
+.expanded {
+	font-weight: 700;
+}
+
+.arrow {
+	display: flex;
+	align-items: center;
+}
+
+.accordion-content {
+	color: var(--normGray);
+	font-weight: 400;
+	font-size: 0.8rem;
+	overflow: hidden;
+	transition: 0.3s ease-in;
 }
 
 .flipped {
