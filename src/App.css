@@ -10,10 +10,6 @@
 	--lightGray: hsl(240, 5%, 91%);
 }
 
-h1 {
-	font-weight: 700;
-}
-
 .App {
 	font-family: 'Kumbh Sans', sans-serif;
 }
@@ -22,7 +18,12 @@ h1 {
 	min-width: 200px;
 	background-color: white;
 	margin: 15vh auto;
-	padding: 15vh 5vh 10vh;
+	padding: 15vh 3vh 10vh;
+	border-radius: 15px;
+}
+
+.faq-title {
+	font-weight: 700;
 }
 
 .accordion-item {
@@ -31,7 +32,7 @@ h1 {
 
 .accordion-header {
 	color: var(--veryDarkBlue);
-	font-size: 1rem;
+	font-size: 0.9rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -54,8 +55,6 @@ h1 {
 	color: var(--normGray);
 	font-weight: 400;
 	font-size: 0.8rem;
-	overflow: hidden;
-	transition: 0.3s ease-in;
 }
 
 .flipped {
