@@ -1,26 +1,19 @@
 import './App.css';
+import AccordionItem from './components/AccordionItem';
 import {list} from './components/list';
-import {ReactComponent as ArrowIcon} from './images/icon-arrow-down.svg';
-import {Accordion, AccordionSummary, AccordionDetails} from '@mui/material';
 
 function App() {
 	return (
 		<div className='App'>
 			<div>
 				<h1>FAQ</h1>
-				{list.map((item) => {
+				{list.map((item, index) => {
 					return (
-						<Accordion disableGutters='true'>
-							<AccordionSummary>
-								<p className='question'>{item.question}</p>
-								<div className='arrow'>
-									<ArrowIcon />
-								</div>
-							</AccordionSummary>
-							<AccordionDetails>
-								<p className='answer'>{item.answer}</p>
-							</AccordionDetails>
-						</Accordion>
+						<AccordionItem
+							key={index}
+							question={item.question}
+							answer={item.answer}
+						/>
 					);
 				})}
 			</div>

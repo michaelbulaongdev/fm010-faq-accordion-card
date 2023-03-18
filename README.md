@@ -1,1 +1,1 @@
-sample project created using react and mui
+sample project created using react

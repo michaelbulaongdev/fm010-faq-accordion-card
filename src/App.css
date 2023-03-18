@@ -14,3 +14,7 @@
 	--normGray: hsl(240, 6%, 50%);
 	--lightGray: hsl(240, 5%, 91%);
 }
+
+.flipped {
+	transform: scaleY(-1);
+}
