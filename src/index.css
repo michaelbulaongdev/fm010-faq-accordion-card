@@ -1,9 +1,11 @@
 body {
 	background: linear-gradient(to bottom, var(--softViolet), var(--softBlue));
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 100vh;
 	margin: 0;
-	padding: 3vh;
-	text-align: left;
+	padding: 0 3vh;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 		sans-serif;

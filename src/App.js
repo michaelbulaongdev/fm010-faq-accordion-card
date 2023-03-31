@@ -1,5 +1,6 @@
 import './App.css';
 import AccordionItem from './components/AccordionItem';
+import Illustration from './components/Illustration';
 import {list} from './components/list';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
 		<div className='App'>
 			<div>
 				<div className='faq-container'>
+					<Illustration />
 					<h1 className='faq-title'>FAQ</h1>
 					{list.map((item, index) => {
 						return (

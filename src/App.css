@@ -17,9 +17,10 @@
 .faq-container {
 	min-width: 200px;
 	background-color: white;
-	margin: 15vh auto;
-	padding: 15vh 3vh 10vh;
+	margin: 0 auto;
+	padding: 5vh 3vh;
 	border-radius: 15px;
+	box-shadow: 5px 10px 30px var(--darkGray);
 }
 
 .faq-title {
@@ -49,12 +50,16 @@
 .arrow {
 	display: flex;
 	align-items: center;
+	margin-left: 2rem;
 }
 
 .accordion-content {
 	color: var(--normGray);
 	font-weight: 400;
 	font-size: 0.8rem;
+	padding-right: 2rem;
+	position: relative;
+	bottom: 1rem;
 }
 
 .flipped {
